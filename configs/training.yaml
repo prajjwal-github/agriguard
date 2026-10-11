@@ -1,0 +1,28 @@
+training:
+  batch_size: 16
+  num_workers: 0  # 0 for Windows compatibility
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  epochs: 8
+  optimizer: "AdamW"
+  lr_scheduler: "CosineAnnealingLR"
+  min_lr: 0.00001
+  early_stopping_patience: 3
+  seed: 42
+  device: "cpu"  # Automatically overridden if CUDA is detected
+  mixed_precision: false
+
+architectures:
+  default: "mobilenet_v3_small"
+  candidates:
+    - "mobilenet_v3_small"
+    - "resnet18"
+
+class_weighting:
+  enabled: true
+  strategy: "balanced"  # inverse frequency weighting for imbalanced disease sets
+
+artifacts:
+  checkpoints_dir: "models/checkpoints"
+  exported_dir: "models/exported"
+  metrics_dir: "data/reports"

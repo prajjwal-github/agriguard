@@ -1,0 +1,202 @@
+registry_version: "1.0.0"
+
+categories:
+  fruit:
+    display_name: "Fruit"
+    description: "Photographs of fruit surfaces, skins, and harvested fruits."
+    crops:
+      apple:
+        display_name: "Apple"
+        status: "ready"
+        active_model: "models/exported/apple_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "fruit_surface_classification"
+        num_classes: 3
+        classes:
+          - "healthy"
+          - "minor_blemish"
+          - "rot_decay"
+      banana:
+        display_name: "Banana"
+        status: "ready"
+        active_model: "models/exported/banana_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "fruit_surface_classification"
+        num_classes: 3
+        classes:
+          - "healthy"
+          - "minor_blemish"
+          - "rot_decay"
+      orange:
+        display_name: "Orange"
+        status: "ready"
+        active_model: "models/exported/orange_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "fruit_surface_classification"
+        num_classes: 3
+        classes:
+          - "healthy"
+          - "minor_blemish"
+          - "rot_decay"
+      mango:
+        display_name: "Mango"
+        status: "planned"
+        active_model: null
+      grapes:
+        display_name: "Grapes"
+        status: "planned"
+        active_model: null
+
+  fruit_leaf:
+    display_name: "Fruit Leaf"
+    description: "Close-up foliage photographs from fruit orchards and vines."
+    crops:
+      apple_leaf:
+        display_name: "Apple Leaf"
+        status: "ready"
+        active_model: "models/exported/apple_leaf_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "multiclass_classification"
+        num_classes: 4
+        classes:
+          - "apple_scab"
+          - "black_rot"
+          - "cedar_apple_rust"
+          - "healthy"
+      grape_leaf:
+        display_name: "Grape Leaf"
+        status: "ready"
+        active_model: "models/exported/grape_leaf_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "multiclass_classification"
+        num_classes: 4
+        classes:
+          - "black_rot"
+          - "esca_black_measles"
+          - "leaf_blight"
+          - "healthy"
+      citrus_leaf:
+        display_name: "Citrus / Orange Leaf"
+        status: "planned"
+        active_model: null
+      mango_leaf:
+        display_name: "Mango Leaf"
+        status: "planned"
+        active_model: null
+      banana_leaf:
+        display_name: "Banana Leaf"
+        status: "planned"
+        active_model: null
+
+  vegetable:
+    display_name: "Vegetable"
+    description: "Harvested whole vegetables, pods, and tubers."
+    crops:
+      tomato:
+        display_name: "Tomato"
+        status: "planned"
+        active_model: null
+      potato:
+        display_name: "Potato"
+        status: "planned"
+        active_model: null
+      chilli:
+        display_name: "Chilli / Pepper"
+        status: "planned"
+        active_model: null
+      brinjal:
+        display_name: "Brinjal / Eggplant"
+        status: "planned"
+        active_model: null
+
+  vegetable_leaf:
+    display_name: "Vegetable Leaf"
+    description: "Leaves and foliage of vegetable plants."
+    crops:
+      tomato_leaf:
+        display_name: "Tomato Leaf"
+        status: "ready"
+        active_model: "models/exported/tomato_leaf_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "multiclass_classification"
+        num_classes: 5
+        classes:
+          - "bacterial_spot"
+          - "early_blight"
+          - "late_blight"
+          - "septoria_leaf_spot"
+          - "healthy"
+      potato_leaf:
+        display_name: "Potato Leaf"
+        status: "ready"
+        active_model: "models/exported/potato_leaf_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "multiclass_classification"
+        num_classes: 3
+        classes:
+          - "early_blight"
+          - "late_blight"
+          - "healthy"
+      chilli_leaf:
+        display_name: "Chilli / Pepper Leaf"
+        status: "ready"
+        active_model: "models/exported/chilli_leaf_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "multiclass_classification"
+        num_classes: 2
+        classes:
+          - "bacterial_spot"
+          - "healthy"
+      brinjal_leaf:
+        display_name: "Brinjal Leaf"
+        status: "planned"
+        active_model: null
+
+  grain:
+    display_name: "Grain"
+    description: "Harvested seed grains, ears, and kernels."
+    crops:
+      rice_grain:
+        display_name: "Rice / Paddy Grain"
+        status: "planned"
+        active_model: null
+      wheat_grain:
+        display_name: "Wheat Grain"
+        status: "planned"
+        active_model: null
+      maize_grain:
+        display_name: "Maize / Corn Grain"
+        status: "planned"
+        active_model: null
+
+  grain_crop_leaf:
+    display_name: "Grain Crop / Leaf"
+    description: "Cereal crops, stalks, tillers, and leaf canopies in the field."
+    crops:
+      rice_leaf:
+        display_name: "Rice / Paddy Leaf"
+        status: "ready"
+        active_model: "models/exported/rice_leaf_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "multiclass_classification"
+        num_classes: 3
+        classes:
+          - "bacterial_leaf_blight"
+          - "brown_spot"
+          - "leaf_smut"
+      maize_leaf:
+        display_name: "Maize / Corn Leaf"
+        status: "ready"
+        active_model: "models/exported/maize_leaf_mobilenet_v3_small.pt"
+        architecture: "mobilenet_v3_small"
+        task: "multiclass_classification"
+        num_classes: 4
+        classes:
+          - "cercospora_leaf_spot"
+          - "common_rust"
+          - "northern_leaf_blight"
+          - "healthy"
+      wheat_leaf:
+        display_name: "Wheat Plant / Leaf"
+        status: "planned"
+        active_model: null

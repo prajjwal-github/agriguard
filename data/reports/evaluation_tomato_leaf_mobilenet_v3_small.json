@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-10-11T09:40:44.301478+00:00",
+  "num_test_samples": 45,
+  "classes": [
+    "bacterial_spot",
+    "early_blight",
+    "healthy",
+    "late_blight",
+    "septoria_leaf_spot"
+  ],
+  "metrics": {
+    "accuracy": 0.8889,
+    "macro_precision": 0.9078,
+    "macro_recall": 0.8889,
+    "macro_f1": 0.8869,
+    "weighted_f1": 0.8869,
+    "avg_latency_ms": 5.85
+  },
+  "per_class_metrics": {
+    "bacterial_spot": {
+      "precision": 1.0,
+      "recall": 0.8889,
+      "f1_score": 0.9412,
+      "support": 9.0
+    },
+    "early_blight": {
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1_score": 0.8,
+      "support": 9.0
+    },
+    "healthy": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1_score": 0.8571,
+      "support": 9.0
+    },
+    "late_blight": {
+      "precision": 0.8889,
+      "recall": 0.8889,
+      "f1_score": 0.8889,
+      "support": 9.0
+    },
+    "septoria_leaf_spot": {
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1_score": 0.9474,
+      "support": 9.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      8,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      8,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      9
+    ]
+  ]
+}

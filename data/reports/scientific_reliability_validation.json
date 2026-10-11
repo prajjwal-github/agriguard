@@ -1,0 +1,193 @@
+{
+  "timestamp": "",
+  "leakage_verification": {
+    "apple": {
+      "train_samples": 126,
+      "val_samples": 27,
+      "test_samples": 27,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "apple_leaf": {
+      "train_samples": 84,
+      "val_samples": 16,
+      "test_samples": 20,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "banana": {
+      "train_samples": 126,
+      "val_samples": 27,
+      "test_samples": 27,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "chilli_leaf": {
+      "train_samples": 70,
+      "val_samples": 14,
+      "test_samples": 16,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "grape_leaf": {
+      "train_samples": 84,
+      "val_samples": 16,
+      "test_samples": 20,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "maize_leaf": {
+      "train_samples": 84,
+      "val_samples": 16,
+      "test_samples": 20,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "orange": {
+      "train_samples": 126,
+      "val_samples": 27,
+      "test_samples": 27,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "potato_leaf": {
+      "train_samples": 135,
+      "val_samples": 27,
+      "test_samples": 33,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "rice_leaf": {
+      "train_samples": 62,
+      "val_samples": 13,
+      "test_samples": 16,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    },
+    "tomato_leaf": {
+      "train_samples": 210,
+      "val_samples": 45,
+      "test_samples": 45,
+      "id_overlap": 0,
+      "phash_overlap": 0,
+      "leakage_detected": false
+    }
+  },
+  "calibration_benchmarks": {
+    "apple": {
+      "test_samples": 27,
+      "test_accuracy": 0.8889,
+      "mean_confidence": 0.887,
+      "ece": 0.1098,
+      "brier_score": 0.2157,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "apple_leaf": {
+      "test_samples": 20,
+      "test_accuracy": 0.95,
+      "mean_confidence": 0.7908,
+      "ece": 0.1929,
+      "brier_score": 0.1158,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "banana": {
+      "test_samples": 27,
+      "test_accuracy": 0.9259,
+      "mean_confidence": 0.856,
+      "ece": 0.126,
+      "brier_score": 0.0872,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "chilli_leaf": {
+      "test_samples": 16,
+      "test_accuracy": 0.625,
+      "mean_confidence": 0.7357,
+      "ece": 0.1774,
+      "brier_score": 0.4215,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "grape_leaf": {
+      "test_samples": 20,
+      "test_accuracy": 0.85,
+      "mean_confidence": 0.6965,
+      "ece": 0.2051,
+      "brier_score": 0.2234,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "maize_leaf": {
+      "test_samples": 20,
+      "test_accuracy": 0.9,
+      "mean_confidence": 0.7996,
+      "ece": 0.1531,
+      "brier_score": 0.158,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "orange": {
+      "test_samples": 27,
+      "test_accuracy": 0.8889,
+      "mean_confidence": 0.8382,
+      "ece": 0.0791,
+      "brier_score": 0.1935,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "potato_leaf": {
+      "test_samples": 33,
+      "test_accuracy": 0.7576,
+      "mean_confidence": 0.9091,
+      "ece": 0.1872,
+      "brier_score": 0.3516,
+      "calibration_assessment": "Uncalibrated Softmax Overconfidence; requires entropy thresholding and clinical expert triage"
+    },
+    "rice_leaf": {
+      "test_samples": 16,
+      "test_accuracy": 0.625,
+      "mean_confidence": 0.4393,
+      "ece": 0.2912,
+      "brier_score": 0.5512,
+      "calibration_assessment": "Small-Sample Indicative Only (N<30); uncalibrated softmax cannot be interpreted as posterior certainty"
+    },
+    "tomato_leaf": {
+      "test_samples": 45,
+      "test_accuracy": 0.8889,
+      "mean_confidence": 0.8335,
+      "ece": 0.1087,
+      "brier_score": 0.1792,
+      "calibration_assessment": "Uncalibrated Softmax Overconfidence; requires entropy thresholding and clinical expert triage"
+    }
+  },
+  "ood_rejection_verification": {
+    "gaussian_noise": {
+      "predicted_condition": "bacterial_leaf_blight",
+      "confidence": 0.3785,
+      "entropy": 1.0899,
+      "is_reliable": false,
+      "safety_rejection_triggered": true,
+      "warnings_count": 1
+    },
+    "uniform_gray": {
+      "predicted_condition": "bacterial_leaf_blight",
+      "confidence": 0.3947,
+      "entropy": 1.0902,
+      "is_reliable": false,
+      "safety_rejection_triggered": true,
+      "warnings_count": 1
+    },
+    "checkerboard": {
+      "predicted_condition": "bacterial_leaf_blight",
+      "confidence": 0.4424,
+      "entropy": 1.0679,
+      "is_reliable": false,
+      "safety_rejection_triggered": true,
+      "warnings_count": 1
+    }
+  }
+}

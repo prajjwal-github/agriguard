@@ -1,0 +1,38 @@
+[
+  {
+    "id": "paddy_rice_disease_uci",
+    "name": "Rice Leaf Diseases Dataset",
+    "url": "https://archive.ics.uci.edu/dataset/547/rice+leaf+diseases",
+    "license": "CC BY 4.0 / Open Research Access",
+    "reachable": true,
+    "http_status": 200,
+    "crop_coverage": "rice_leaf",
+    "known_limitations": "Lab-acquired leaf segments with white/plain background on some subsets; field variability requires data augmentation."
+  },
+  {
+    "id": "plantvillage_open_subset",
+    "name": "PlantVillage Open Research Dataset",
+    "url": "https://github.com/spMohanty/PlantVillage-Dataset",
+    "license": "CC BY 4.0 (Open Access, Creative Commons Attribution)",
+    "reachable": true,
+    "http_status": 200,
+    "crop_coverage": [
+      "apple_leaf",
+      "grape_leaf",
+      "tomato_leaf",
+      "potato_leaf",
+      "maize_leaf"
+    ],
+    "known_limitations": "Captured in controlled studio conditions; cross-domain field evaluation recommended."
+  },
+  {
+    "id": "paddy_doctor_iclr",
+    "name": "Paddy Doctor: A Large-Scale Benchmark for Paddy Disease Recognition",
+    "url": "https://paddydoctor.github.io/",
+    "license": "Research & Non-Commercial Evaluation License",
+    "reachable": false,
+    "http_status": 404,
+    "crop_coverage": "rice_leaf",
+    "known_limitations": "Full benchmark is 2+ GB, suitable for high-compute scaleout."
+  }
+]

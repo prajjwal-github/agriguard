@@ -1,0 +1,228 @@
+{
+  "timestamp": "2026-10-11T11:30:47.440733+00:00",
+  "total_categories": 6,
+  "category_summary": {
+    "fruit": {
+      "display_name": "Fruit",
+      "crops": {
+        "apple": {
+          "display_name": "Apple",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 180,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "banana": {
+          "display_name": "Banana",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 180,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "orange": {
+          "display_name": "Orange",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 180,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "mango": {
+          "display_name": "Mango",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "grapes": {
+          "display_name": "Grapes",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        }
+      }
+    },
+    "fruit_leaf": {
+      "display_name": "Fruit Leaf",
+      "crops": {
+        "apple_leaf": {
+          "display_name": "Apple Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 120,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "grape_leaf": {
+          "display_name": "Grape Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 120,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "citrus_leaf": {
+          "display_name": "Citrus / Orange Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "mango_leaf": {
+          "display_name": "Mango Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "banana_leaf": {
+          "display_name": "Banana Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        }
+      }
+    },
+    "vegetable": {
+      "display_name": "Vegetable",
+      "crops": {
+        "tomato": {
+          "display_name": "Tomato",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "potato": {
+          "display_name": "Potato",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "chilli": {
+          "display_name": "Chilli / Pepper",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "brinjal": {
+          "display_name": "Brinjal / Eggplant",
+          "plant_organ": "Fruit / Vegetable Surface",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        }
+      }
+    },
+    "vegetable_leaf": {
+      "display_name": "Vegetable Leaf",
+      "crops": {
+        "tomato_leaf": {
+          "display_name": "Tomato Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 300,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "potato_leaf": {
+          "display_name": "Potato Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 195,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "chilli_leaf": {
+          "display_name": "Chilli / Pepper Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 100,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "brinjal_leaf": {
+          "display_name": "Brinjal Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        }
+      }
+    },
+    "grain": {
+      "display_name": "Grain",
+      "crops": {
+        "rice_grain": {
+          "display_name": "Rice / Paddy Grain",
+          "plant_organ": "Grain",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "wheat_grain": {
+          "display_name": "Wheat Grain",
+          "plant_organ": "Grain",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        },
+        "maize_grain": {
+          "display_name": "Maize / Corn Grain",
+          "plant_organ": "Grain",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        }
+      }
+    },
+    "grain_crop_leaf": {
+      "display_name": "Grain Crop / Leaf",
+      "crops": {
+        "rice_leaf": {
+          "display_name": "Rice / Paddy Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 91,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "maize_leaf": {
+          "display_name": "Maize / Corn Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Verified Authentic",
+          "verified_images": 120,
+          "has_trained_model": true,
+          "model_status": "ready"
+        },
+        "wheat_leaf": {
+          "display_name": "Wheat Plant / Leaf",
+          "plant_organ": "Leaf",
+          "dataset_status": "Planned / Curation Pending",
+          "verified_images": 0,
+          "has_trained_model": false,
+          "model_status": "planned"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+version: "1.0.0"
+
+categories:
+  fruit:
+    description: "Fruit organs, whole fruits, fruit skin"
+    allowed_parts: ["fruit_skin", "whole_fruit"]
+  fruit_leaf:
+    description: "Leaves of fruit trees and vines"
+    allowed_parts: ["leaf"]
+  vegetable:
+    description: "Vegetables, tubers, pods, taproots"
+    allowed_parts: ["tuber", "whole_vegetable", "pod"]
+  vegetable_leaf:
+    description: "Foliage and leaves of vegetable plants"
+    allowed_parts: ["leaf"]
+  grain:
+    description: "Grain seeds, kernels, ears, panicles"
+    allowed_parts: ["grain_kernel", "panicle"]
+  grain_crop_leaf:
+    description: "Cereal crop foliage, tillers, and leaves"
+    allowed_parts: ["leaf", "tiller", "stalk"]
+
+normalized_conditions:
+  apple_leaf:
+    - "apple_scab"
+    - "black_rot"
+    - "cedar_apple_rust"
+    - "healthy"
+  grape_leaf:
+    - "black_rot"
+    - "esca_black_measles"
+    - "leaf_blight"
+    - "healthy"
+  tomato_leaf:
+    - "bacterial_spot"
+    - "early_blight"
+    - "late_blight"
+    - "septoria_leaf_spot"
+    - "healthy"
+  potato_leaf:
+    - "early_blight"
+    - "late_blight"
+    - "healthy"
+  maize_leaf:
+    - "cercospora_leaf_spot"
+    - "common_rust"
+    - "northern_leaf_blight"
+    - "healthy"
+  rice_leaf:
+    - "bacterial_leaf_blight"
+    - "brown_spot"
+    - "leaf_smut"

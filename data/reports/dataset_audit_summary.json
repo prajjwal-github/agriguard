@@ -1,0 +1,346 @@
+{
+  "apple": {
+    "timestamp": "2026-10-11T11:31:01.131041+00:00",
+    "crop": "apple",
+    "category": "fruit",
+    "total_images": 180,
+    "usable_images": 180,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 3,
+    "class_distribution": {
+      "healthy": 60,
+      "minor_blemish": 60,
+      "rot_decay": 60
+    },
+    "split_distribution": {
+      "train": 126,
+      "val": 27,
+      "test": 27
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 418,
+      "max_width": 640,
+      "avg_width": 521.3,
+      "min_height": 416,
+      "max_height": 510,
+      "avg_height": 453.1
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "apple_leaf": {
+    "timestamp": "2026-10-11T11:31:01.132161+00:00",
+    "crop": "apple_leaf",
+    "category": "fruit_leaf",
+    "total_images": 120,
+    "usable_images": 120,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 4,
+    "class_distribution": {
+      "apple_scab": 30,
+      "black_rot": 30,
+      "cedar_apple_rust": 30,
+      "healthy": 30
+    },
+    "split_distribution": {
+      "train": 84,
+      "val": 16,
+      "test": 20
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 256,
+      "max_width": 256,
+      "avg_width": 256.0,
+      "min_height": 256,
+      "max_height": 256,
+      "avg_height": 256.0
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "banana": {
+    "timestamp": "2026-10-11T11:31:01.132553+00:00",
+    "crop": "banana",
+    "category": "fruit",
+    "total_images": 180,
+    "usable_images": 180,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 3,
+    "class_distribution": {
+      "healthy": 60,
+      "minor_blemish": 60,
+      "rot_decay": 60
+    },
+    "split_distribution": {
+      "train": 126,
+      "val": 27,
+      "test": 27
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 428,
+      "max_width": 840,
+      "avg_width": 645.6,
+      "min_height": 418,
+      "max_height": 500,
+      "avg_height": 455.1
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "chilli_leaf": {
+    "timestamp": "2026-10-11T11:31:01.132851+00:00",
+    "crop": "chilli_leaf",
+    "category": "vegetable_leaf",
+    "total_images": 100,
+    "usable_images": 100,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 2,
+    "class_distribution": {
+      "bacterial_spot": 50,
+      "healthy": 50
+    },
+    "split_distribution": {
+      "train": 70,
+      "val": 14,
+      "test": 16
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 256,
+      "max_width": 256,
+      "avg_width": 256.0,
+      "min_height": 256,
+      "max_height": 256,
+      "avg_height": 256.0
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "grape_leaf": {
+    "timestamp": "2026-10-11T11:31:01.133321+00:00",
+    "crop": "grape_leaf",
+    "category": "fruit_leaf",
+    "total_images": 120,
+    "usable_images": 120,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 4,
+    "class_distribution": {
+      "black_rot": 30,
+      "esca_black_measles": 30,
+      "healthy": 30,
+      "leaf_blight": 30
+    },
+    "split_distribution": {
+      "train": 84,
+      "val": 16,
+      "test": 20
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 256,
+      "max_width": 256,
+      "avg_width": 256.0,
+      "min_height": 256,
+      "max_height": 256,
+      "avg_height": 256.0
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "maize_leaf": {
+    "timestamp": "2026-10-11T11:31:01.133624+00:00",
+    "crop": "maize_leaf",
+    "category": "grain_crop_leaf",
+    "total_images": 120,
+    "usable_images": 120,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 4,
+    "class_distribution": {
+      "cercospora_leaf_spot": 30,
+      "common_rust": 30,
+      "healthy": 30,
+      "northern_leaf_blight": 30
+    },
+    "split_distribution": {
+      "train": 84,
+      "val": 16,
+      "test": 20
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 256,
+      "max_width": 256,
+      "avg_width": 256.0,
+      "min_height": 256,
+      "max_height": 256,
+      "avg_height": 256.0
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "orange": {
+    "timestamp": "2026-10-11T11:31:01.134075+00:00",
+    "crop": "orange",
+    "category": "fruit",
+    "total_images": 180,
+    "usable_images": 180,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 3,
+    "class_distribution": {
+      "healthy": 60,
+      "minor_blemish": 60,
+      "rot_decay": 60
+    },
+    "split_distribution": {
+      "train": 126,
+      "val": 27,
+      "test": 27
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 416,
+      "max_width": 696,
+      "avg_width": 554.1,
+      "min_height": 416,
+      "max_height": 496,
+      "avg_height": 458.0
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "potato_leaf": {
+    "timestamp": "2026-10-11T11:31:01.134368+00:00",
+    "crop": "potato_leaf",
+    "category": "vegetable_leaf",
+    "total_images": 195,
+    "usable_images": 195,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 3,
+    "class_distribution": {
+      "early_blight": 65,
+      "healthy": 65,
+      "late_blight": 65
+    },
+    "split_distribution": {
+      "train": 135,
+      "val": 27,
+      "test": 33
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 256,
+      "max_width": 256,
+      "avg_width": 256.0,
+      "min_height": 256,
+      "max_height": 256,
+      "avg_height": 256.0
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "rice_leaf": {
+    "timestamp": "2026-10-11T11:31:01.134631+00:00",
+    "crop": "rice_leaf",
+    "category": "grain_crop_leaf",
+    "total_images": 91,
+    "usable_images": 91,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 3,
+    "class_distribution": {
+      "bacterial_leaf_blight": 35,
+      "brown_spot": 28,
+      "leaf_smut": 28
+    },
+    "split_distribution": {
+      "train": 62,
+      "val": 13,
+      "test": 16
+    },
+    "imbalance_ratio": 1.25,
+    "resolution_stats": {
+      "min_width": 250,
+      "max_width": 3081,
+      "avg_width": 2635.7,
+      "min_height": 88,
+      "max_height": 900,
+      "avg_height": 785.8
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "tomato_leaf": {
+    "timestamp": "2026-10-11T11:31:01.134937+00:00",
+    "crop": "tomato_leaf",
+    "category": "vegetable_leaf",
+    "total_images": 300,
+    "usable_images": 300,
+    "corrupt_images": 0,
+    "duplicate_images": 0,
+    "num_classes": 5,
+    "class_distribution": {
+      "bacterial_spot": 60,
+      "early_blight": 60,
+      "healthy": 60,
+      "late_blight": 60,
+      "septoria_leaf_spot": 60
+    },
+    "split_distribution": {
+      "train": 210,
+      "val": 45,
+      "test": 45
+    },
+    "imbalance_ratio": 1.0,
+    "resolution_stats": {
+      "min_width": 256,
+      "max_width": 256,
+      "avg_width": 256.0,
+      "min_height": 256,
+      "max_height": 256,
+      "avg_height": 256.0
+    },
+    "quality_gate": {
+      "passed": true,
+      "warnings": [],
+      "failures": []
+    }
+  }
+}

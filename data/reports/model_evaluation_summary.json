@@ -1,0 +1,146 @@
+[
+  {
+    "crop": "apple_leaf",
+    "test_samples": 20,
+    "classes": [
+      "apple_scab",
+      "black_rot",
+      "cedar_apple_rust",
+      "healthy"
+    ],
+    "accuracy": 0.95,
+    "macro_f1": 0.9495,
+    "macro_precision": 0.9583,
+    "macro_recall": 0.95,
+    "latency_ms": 8.32
+  },
+  {
+    "crop": "apple",
+    "test_samples": 27,
+    "classes": [
+      "healthy",
+      "minor_blemish",
+      "rot_decay"
+    ],
+    "accuracy": 0.8889,
+    "macro_f1": 0.8857,
+    "macro_precision": 0.9167,
+    "macro_recall": 0.8889,
+    "latency_ms": 3.23
+  },
+  {
+    "crop": "banana",
+    "test_samples": 18,
+    "classes": [
+      "healthy",
+      "minor_blemish",
+      "rot_decay"
+    ],
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "latency_ms": 13.1
+  },
+  {
+    "crop": "chilli_leaf",
+    "test_samples": 16,
+    "classes": [
+      "bacterial_spot",
+      "healthy"
+    ],
+    "accuracy": 0.625,
+    "macro_f1": 0.5636,
+    "macro_precision": 0.7857,
+    "macro_recall": 0.625,
+    "latency_ms": 6.4
+  },
+  {
+    "crop": "grape_leaf",
+    "test_samples": 20,
+    "classes": [
+      "black_rot",
+      "esca_black_measles",
+      "healthy",
+      "leaf_blight"
+    ],
+    "accuracy": 0.85,
+    "macro_f1": 0.8285,
+    "macro_precision": 0.8869,
+    "macro_recall": 0.85,
+    "latency_ms": 8.19
+  },
+  {
+    "crop": "maize_leaf",
+    "test_samples": 20,
+    "classes": [
+      "cercospora_leaf_spot",
+      "common_rust",
+      "healthy",
+      "northern_leaf_blight"
+    ],
+    "accuracy": 0.9,
+    "macro_f1": 0.8958,
+    "macro_precision": 0.9286,
+    "macro_recall": 0.9,
+    "latency_ms": 8.57
+  },
+  {
+    "crop": "orange",
+    "test_samples": 18,
+    "classes": [
+      "healthy",
+      "minor_blemish",
+      "rot_decay"
+    ],
+    "accuracy": 0.9444,
+    "macro_f1": 0.9441,
+    "macro_precision": 0.9524,
+    "macro_recall": 0.9444,
+    "latency_ms": 15.07
+  },
+  {
+    "crop": "potato_leaf",
+    "test_samples": 33,
+    "classes": [
+      "early_blight",
+      "healthy",
+      "late_blight"
+    ],
+    "accuracy": 0.7576,
+    "macro_f1": 0.7408,
+    "macro_precision": 0.8125,
+    "macro_recall": 0.7576,
+    "latency_ms": 13.48
+  },
+  {
+    "crop": "rice_leaf",
+    "test_samples": 16,
+    "classes": [
+      "bacterial_leaf_blight",
+      "brown_spot",
+      "leaf_smut"
+    ],
+    "accuracy": 0.625,
+    "macro_f1": 0.582,
+    "macro_precision": 0.5833,
+    "macro_recall": 0.6,
+    "latency_ms": 5.26
+  },
+  {
+    "crop": "tomato_leaf",
+    "test_samples": 45,
+    "classes": [
+      "bacterial_spot",
+      "early_blight",
+      "healthy",
+      "late_blight",
+      "septoria_leaf_spot"
+    ],
+    "accuracy": 0.8889,
+    "macro_f1": 0.8869,
+    "macro_precision": 0.9078,
+    "macro_recall": 0.8889,
+    "latency_ms": 5.85
+  }
+]

@@ -1,0 +1,41 @@
+raw_data_dir: "data/raw"
+interim_data_dir: "data/interim"
+processed_data_dir: "data/processed"
+manifests_dir: "data/manifests"
+reports_dir: "data/reports"
+
+random_seed: 42
+
+validation:
+  min_width: 64
+  min_height: 64
+  max_dimension: 4096
+  allowed_formats:
+    - "JPEG"
+    - "JPG"
+    - "PNG"
+    - "WEBP"
+  max_aspect_ratio: 3.5
+
+deduplication:
+  method: "phash"
+  hash_size: 8
+  hamming_distance_threshold: 4
+
+splitting:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  stratified: true
+  group_by_hash: true
+
+augmentation:
+  train:
+    horizontal_flip: 0.5
+    vertical_flip: 0.2
+    rotation_degrees: 15
+    brightness_contrast: 0.15
+    color_jitter: 0.1
+    resize: [224, 224]
+  eval:
+    resize: [224, 224]

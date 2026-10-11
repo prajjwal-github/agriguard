@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-10-11T09:18:41.450892+00:00",
+  "num_test_samples": 18,
+  "classes": [
+    "healthy",
+    "minor_blemish",
+    "rot_decay"
+  ],
+  "metrics": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "avg_latency_ms": 13.1
+  },
+  "per_class_metrics": {
+    "healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 6.0
+    },
+    "minor_blemish": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 6.0
+    },
+    "rot_decay": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 6.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      6
+    ]
+  ]
+}

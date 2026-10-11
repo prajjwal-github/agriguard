@@ -1,0 +1,21 @@
+inference:
+  device: "cpu"
+  input_resolution: [224, 224]
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+  confidence_threshold: 0.55
+  entropy_ood_threshold: 1.85  # Higher Shannon entropy signifies flat/uncertain out-of-distribution softmax
+  top_k: 3
+
+explainability:
+  enable_gradcam: true
+  target_layer_mapping:
+    mobilenet_v3_small: "features.12"
+    resnet18: "layer4"
+  colormap: "jet"
+  alpha: 0.45
+
+severity:
+  enabled: true
+  method: "color_mask_and_lesion_heuristic"  # transparently indicates lesion coverage heuristic when full pixel masks are unavailable
