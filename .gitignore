@@ -37,7 +37,6 @@ data/processed/*
 !data/processed/.gitkeep
 models/checkpoints/*
 !models/checkpoints/.gitkeep
-!models/checkpoints/*.pt
 
 # Frontend
 frontend/node_modules/

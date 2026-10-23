@@ -8,8 +8,8 @@ categories:
       apple:
         display_name: "Apple"
         status: "ready"
-        active_model: "models/exported/apple_mobilenet_v3_small.pt"
-        architecture: "mobilenet_v3_small"
+        active_model: "models/exported/apple_resnet18.pt"
+        architecture: "resnet18"
         task: "fruit_surface_classification"
         num_classes: 3
         classes:
@@ -176,8 +176,8 @@ categories:
       rice_leaf:
         display_name: "Rice / Paddy Leaf"
         status: "ready"
-        active_model: "models/exported/rice_leaf_mobilenet_v3_small.pt"
-        architecture: "mobilenet_v3_small"
+        active_model: "models/exported/rice_leaf_resnet18.pt"
+        architecture: "resnet18"
         task: "multiclass_classification"
         num_classes: 3
         classes:

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-11T08:07:52.684851+00:00",
+  "timestamp": "2026-10-23T14:35:26.429421+00:00",
   "num_test_samples": 16,
   "classes": [
     "bacterial_leaf_blight",
@@ -7,30 +7,30 @@
     "leaf_smut"
   ],
   "metrics": {
-    "accuracy": 0.625,
-    "macro_precision": 0.5833,
-    "macro_recall": 0.6,
-    "macro_f1": 0.582,
-    "weighted_f1": 0.5992,
-    "avg_latency_ms": 5.26
+    "accuracy": 0.875,
+    "macro_precision": 0.9048,
+    "macro_recall": 0.8667,
+    "macro_f1": 0.8611,
+    "weighted_f1": 0.8698,
+    "avg_latency_ms": 4.56
   },
   "per_class_metrics": {
     "bacterial_leaf_blight": {
-      "precision": 0.75,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1_score": 0.8571,
+      "f1_score": 1.0,
       "support": 6.0
     },
     "brown_spot": {
-      "precision": 0.5,
-      "recall": 0.4,
-      "f1_score": 0.4444,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1_score": 0.75,
       "support": 5.0
     },
     "leaf_smut": {
-      "precision": 0.5,
-      "recall": 0.4,
-      "f1_score": 0.4444,
+      "precision": 0.7143,
+      "recall": 1.0,
+      "f1_score": 0.8333,
       "support": 5.0
     }
   },
@@ -41,14 +41,14 @@
       0
     ],
     [
-      1,
-      2,
+      0,
+      3,
       2
     ],
     [
-      1,
-      2,
-      2
+      0,
+      0,
+      5
     ]
   ]
 }

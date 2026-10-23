@@ -112,3 +112,137 @@ export async function predictDisease(
 
   return res.json();
 }
+
+export function getSampleImageUrl(crop: string): string {
+  return `${API_BASE_URL}/api/v1/sample/${crop}`;
+}
+
+export async function fetchSampleImageFile(crop: string): Promise<File> {
+  const url = getSampleImageUrl(crop);
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Could not load test sample for ${crop}`);
+  const blob = await res.blob();
+  return new File([blob], `${crop}_test_sample.jpg`, { type: 'image/jpeg' });
+}
+
+export interface SystemTelemetry {
+  status: string;
+  device: string;
+  torch_version: string;
+  total_models: number;
+  average_accuracy: number;
+  accuracy_range: string;
+  data_leakage_pct: number;
+  timestamp: string;
+}
+
+export interface RecentInference {
+  timestamp: string;
+  prediction_id: string;
+  crop: string;
+  crop_name: string;
+  plant_part: string;
+  predicted_condition: string;
+  display_name: string;
+  confidence: number;
+  latency_ms: number;
+  entropy: number;
+  is_reliable: boolean;
+}
+
+export interface DashboardStats {
+  status: string;
+  system: SystemTelemetry;
+  splits: {
+    total_images: number;
+    train_count: number;
+    train_pct: number;
+    val_count: number;
+    val_pct: number;
+    test_count: number;
+    test_pct: number;
+    leakage_overlap: number;
+  };
+  category_counts: Record<string, number>;
+  models: Array<{
+    crop: string;
+    display_name: string;
+    category: string;
+    architecture: string;
+    test_samples: number;
+    classes: string[];
+    accuracy: number;
+    macro_f1: number;
+    macro_precision: number;
+    macro_recall: number;
+    latency_ms: number;
+  }>;
+  histories: Record<string, any>;
+  recent_inferences: RecentInference[];
+}
+
+export async function getDashboardStats(): Promise<DashboardStats> {
+  const res = await fetch(`${API_BASE_URL}/api/v1/dashboard/stats`);
+  if (!res.ok) throw new Error(`Failed to load dashboard stats: ${res.statusText}`);
+  return res.json();
+}
+
+export interface DatasetCropAudit {
+  timestamp: string;
+  crop: string;
+  category: string;
+  total_images: number;
+  usable_images: number;
+  corrupt_images: number;
+  duplicate_images: number;
+  num_classes: number;
+  class_distribution: Record<string, number>;
+  split_distribution: {
+    train: number;
+    val: number;
+    test: number;
+  };
+  imbalance_ratio: number;
+  resolution_stats: {
+    min_width: number;
+    max_width: number;
+    avg_width: number;
+    min_height: number;
+    max_height: number;
+    avg_height: number;
+  };
+  quality_gate: {
+    passed: boolean;
+    warnings: string[];
+    failures: string[];
+  };
+}
+
+export interface DatasetAuditResponse {
+  status: string;
+  splits: {
+    total_images: number;
+    train_count: number;
+    train_pct: number;
+    val_count: number;
+    val_pct: number;
+    test_count: number;
+    test_pct: number;
+    leakage_overlap: number;
+  };
+  crops: Record<string, DatasetCropAudit>;
+  coverage: any;
+}
+
+export async function getDatasetAudit(): Promise<DatasetAuditResponse> {
+  const res = await fetch(`${API_BASE_URL}/api/v1/dataset/audit`);
+  if (!res.ok) throw new Error(`Failed to load dataset audit: ${res.statusText}`);
+  return res.json();
+}
+
+export async function getRecentInferences(): Promise<RecentInference[]> {
+  const res = await fetch(`${API_BASE_URL}/api/v1/inferences/recent`);
+  if (!res.ok) throw new Error(`Failed to load recent inferences: ${res.statusText}`);
+  return res.json();
+}
+

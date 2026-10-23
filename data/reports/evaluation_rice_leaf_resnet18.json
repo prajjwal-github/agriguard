@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-10-23T14:37:11.498485+00:00",
+  "num_test_samples": 16,
+  "classes": [
+    "bacterial_leaf_blight",
+    "brown_spot",
+    "leaf_smut"
+  ],
+  "metrics": {
+    "accuracy": 0.9375,
+    "macro_precision": 0.9524,
+    "macro_recall": 0.9333,
+    "macro_f1": 0.9373,
+    "weighted_f1": 0.9364,
+    "avg_latency_ms": 25.56
+  },
+  "per_class_metrics": {
+    "bacterial_leaf_blight": {
+      "precision": 0.8571,
+      "recall": 1.0,
+      "f1_score": 0.9231,
+      "support": 6.0
+    },
+    "brown_spot": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.8889,
+      "support": 5.0
+    },
+    "leaf_smut": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 5.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      6,
+      0,
+      0
+    ],
+    [
+      1,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      5
+    ]
+  ]
+}

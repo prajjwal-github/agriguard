@@ -68,7 +68,7 @@ export const TransparencyPage: React.FC = () => {
 
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-700">
-                      MobileNetV3-Small
+                      {report.architecture || (modelKey.includes('resnet') ? 'ResNet18' : modelKey.includes('large') ? 'MobileNetV3-Large' : 'MobileNetV3-Small')}
                     </span>
                     <span className="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-700">
                       PyTorch 2.14 CPU
@@ -183,7 +183,7 @@ export const TransparencyPage: React.FC = () => {
           <span>Dataset Provenance & Legal Licensing</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="p-5 rounded-2xl border border-slate-200 space-y-2">
             <span className="text-xs font-bold text-agri-800 uppercase tracking-wider block">
               Rice Leaf Diseases Dataset
@@ -195,10 +195,10 @@ export const TransparencyPage: React.FC = () => {
               <strong>Citation:</strong> <em>Computers and Electronics in Agriculture</em>
             </p>
             <p className="text-xs text-slate-500">
-              <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)
+              <strong>License:</strong> CC BY 4.0 International
             </p>
             <span className="text-[11px] text-emerald-700 font-semibold block">
-              Status: Verified Authentic Dataset • 91 Images Usable
+              Grain Crop / Leaf • 91 Usable Images
             </span>
           </div>
 
@@ -216,7 +216,25 @@ export const TransparencyPage: React.FC = () => {
               <strong>License:</strong> CC BY 4.0 Open Access
             </p>
             <span className="text-[11px] text-emerald-700 font-semibold block">
-              Status: Verified Laboratory Benchmarks • Multi-Crop Foliage
+              Foliage: Tomato, Potato, Grape, Apple, Chilli (955 imgs)
+            </span>
+          </div>
+
+          <div className="p-5 rounded-2xl border border-slate-200 space-y-2">
+            <span className="text-xs font-bold text-agri-800 uppercase tracking-wider block">
+              Fruit Surface & Postharvest Datasets
+            </span>
+            <p className="text-xs text-slate-700 leading-relaxed">
+              <strong>Sources:</strong> Fruits 360, Kaggle Open Agriculture & Mendeley Data
+            </p>
+            <p className="text-xs text-slate-700 leading-relaxed">
+              <strong>Coverage:</strong> Apple, Banana, Orange Fruit Surfaces
+            </p>
+            <p className="text-xs text-slate-500">
+              <strong>License:</strong> CC BY-SA 4.0 / CC0 Public Domain
+            </p>
+            <span className="text-[11px] text-emerald-700 font-semibold block">
+              Fruit Organs: 540 Verified Images
             </span>
           </div>
         </div>

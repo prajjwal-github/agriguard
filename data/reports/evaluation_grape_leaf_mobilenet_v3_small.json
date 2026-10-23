@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-11T09:14:50.848369+00:00",
+  "timestamp": "2026-10-23T14:22:38.693560+00:00",
   "num_test_samples": 20,
   "classes": [
     "black_rot",
@@ -8,24 +8,24 @@
     "leaf_blight"
   ],
   "metrics": {
-    "accuracy": 0.85,
-    "macro_precision": 0.8869,
-    "macro_recall": 0.85,
-    "macro_f1": 0.8285,
-    "weighted_f1": 0.8285,
-    "avg_latency_ms": 8.19
+    "accuracy": 0.95,
+    "macro_precision": 0.9583,
+    "macro_recall": 0.95,
+    "macro_f1": 0.9495,
+    "weighted_f1": 0.9495,
+    "avg_latency_ms": 8.53
   },
   "per_class_metrics": {
     "black_rot": {
-      "precision": 0.7143,
-      "recall": 1.0,
-      "f1_score": 0.8333,
-      "support": 5.0
-    },
-    "esca_black_measles": {
       "precision": 0.8333,
       "recall": 1.0,
       "f1_score": 0.9091,
+      "support": 5.0
+    },
+    "esca_black_measles": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
       "support": 5.0
     },
     "healthy": {
@@ -36,8 +36,8 @@
     },
     "leaf_blight": {
       "precision": 1.0,
-      "recall": 0.4,
-      "f1_score": 0.5714,
+      "recall": 0.8,
+      "f1_score": 0.8889,
       "support": 5.0
     }
   },
@@ -61,10 +61,10 @@
       0
     ],
     [
-      2,
       1,
       0,
-      2
+      0,
+      4
     ]
   ]
 }

@@ -122,6 +122,7 @@ class ModelTrainer:
             if val_f1 > best_val_f1:
                 best_val_f1 = val_f1
                 patience_counter = 0
+                temp_cp = Path(str(best_checkpoint_path) + f".tmp_{epoch}")
                 torch.save(
                     {
                         "epoch": epoch,
@@ -132,8 +133,20 @@ class ModelTrainer:
                         "architecture": self.arch,
                         "classes": self.classes,
                     },
-                    best_checkpoint_path,
+                    temp_cp,
                 )
+                import time
+                for _ in range(5):
+                    try:
+                        if best_checkpoint_path.exists():
+                            try:
+                                best_checkpoint_path.unlink()
+                            except Exception:
+                                pass
+                        temp_cp.replace(best_checkpoint_path)
+                        break
+                    except Exception:
+                        time.sleep(0.15)
                 logger.info(f"  --> Saved new best checkpoint to {best_checkpoint_path} (F1: {best_val_f1:.4f})")
             else:
                 patience_counter += 1
@@ -178,6 +191,19 @@ class ModelTrainer:
             },
             "exported_at": datetime.now(timezone.utc).isoformat(),
         }
-        torch.save(bundle, target_path)
+        temp_target = Path(str(target_path) + ".tmp")
+        torch.save(bundle, temp_target)
+        import time
+        for _ in range(5):
+            try:
+                if target_path.exists():
+                    try:
+                        target_path.unlink()
+                    except Exception:
+                        pass
+                temp_target.replace(target_path)
+                break
+            except Exception:
+                time.sleep(0.15)
         logger.info(f"Production model bundle exported to {target_path}")
         return target_path

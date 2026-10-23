@@ -69,4 +69,4 @@ async def test_predict_endpoint_with_real_image():
         assert pred["predicted_condition"] in ["bacterial_leaf_blight", "brown_spot", "leaf_smut"]
         assert "symptoms" in pred
         assert "management" in pred
-        assert pred["model_metadata"]["architecture"] == "mobilenet_v3_small"
+        assert pred["model_metadata"]["architecture"] in ["resnet18", "mobilenet_v3_small"]

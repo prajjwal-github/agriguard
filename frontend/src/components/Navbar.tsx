@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, resetWo
               }`}
             >
               <ShieldCheck className="w-4 h-4" />
-              <span>Diagnosis</span>
+              <span>Live Dashboard</span>
             </button>
 
             <button
